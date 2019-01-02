@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
-  <title>卡转客官网</title>
+  <title>卡转客官网-NodeUI接入流程 | 卡转客官网</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="baidu-site-verification" content="tsmRBKxvur">
@@ -13,7 +13,7 @@
   <meta itemprop="name" content="卡转客官网">
 
   <!-- Canonical links -->
-  <link rel="canonical" href="https://kazhuanke.github.io/index.html">
+  <link rel="canonical" href="https://kazhuanke.github.io/zh-cn/page/process.html">
   <!-- Alternative links -->
   
   <!-- Icon -->
@@ -45,17 +45,18 @@
    -->
   <!-- Open Graph -->
   <!-- 
-  <meta name="description" content="卡转客官网，完全免费加入代理，佣金行业领先，信用卡品种多，和300万会员一起开启分享经济！">
+  <meta name="description" content="如果当前的产品开发陷入了如下的困惑：  前端开发环境强依赖后端 基于React/Vue移动端性能优化遇到首屏瓶颈 想用bigpipe加速渲染 后端统一输出的接口不满意，想拆分 or 想合并请求 我是前端，我就是想用Node.js  那么，恭喜你，NodeUI是非常适合你的。我们的接入流程是： 1. 流量预估如果你想直接把自己的业务接入线上的NodeUI服务，那么需要实现评估业务的流量。主要包括 P">
 <meta name="keywords" content="卡转客,卡转客官网,卡转客注册">
 <meta property="og:type" content="website">
-<meta property="og:title" content="卡转客官网">
-<meta property="og:url" content="https://kazhuanke.github.io/index.html">
+<meta property="og:title" content="NodeUI接入流程">
+<meta property="og:url" content="https://kazhuanke.github.io/zh-cn/page/process.html">
 <meta property="og:site_name" content="卡转客官网">
-<meta property="og:description" content="卡转客官网，完全免费加入代理，佣金行业领先，信用卡品种多，和300万会员一起开启分享经济！">
+<meta property="og:description" content="如果当前的产品开发陷入了如下的困惑：  前端开发环境强依赖后端 基于React/Vue移动端性能优化遇到首屏瓶颈 想用bigpipe加速渲染 后端统一输出的接口不满意，想拆分 or 想合并请求 我是前端，我就是想用Node.js  那么，恭喜你，NodeUI是非常适合你的。我们的接入流程是： 1. 流量预估如果你想直接把自己的业务接入线上的NodeUI服务，那么需要实现评估业务的流量。主要包括 P">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2017-04-04T14:07:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="卡转客官网">
-<meta name="twitter:description" content="卡转客官网，完全免费加入代理，佣金行业领先，信用卡品种多，和300万会员一起开启分享经济！">
+<meta name="twitter:title" content="NodeUI接入流程">
+<meta name="twitter:description" content="如果当前的产品开发陷入了如下的困惑：  前端开发环境强依赖后端 基于React/Vue移动端性能优化遇到首屏瓶颈 想用bigpipe加速渲染 后端统一输出的接口不满意，想拆分 or 想合并请求 我是前端，我就是想用Node.js  那么，恭喜你，NodeUI是非常适合你的。我们的接入流程是： 1. 流量预估如果你想直接把自己的业务接入线上的NodeUI服务，那么需要实现评估业务的流量。主要包括 P">
    -->
   
 </head>
@@ -88,59 +89,80 @@
   </div>
 </header>
 
-    <header id="banner" class="wrapper">
-  <div class="inner">
-    <h1 id="banner-title">卡转客</h1>
-    <div id="banner-start">
-      <span id="banner-start-command">和300万奋斗者一起创业！</span>
-    </div>
-    
-  </div>
-</header>
-<div id="content-wrap">
+    <div id="content-wrap">
   <div class="wrapper">
     <div class="inner">
-      <ul id="intro-feature-list">
-       <li class="intro-feature-wrap">
-           <div class="intro-feature">
-               <div class="intro-feature-icon">
-                   <i class="fa fa-cog"></i>
-               </div>
-               <h3 class="intro-feature-title">佣金超高</h3>
-               <p class="intro-feature-desc">信用卡平均佣金120元</p>
-           </div>
-       </li>
-       <li class="intro-feature-wrap">
-           <div class="intro-feature">
-               <div class="intro-feature-icon">
-                   <i class="fa fa-pencil"></i>
-               </div>
-               <h3 class="intro-feature-title">银行超多</h3>
-               <p class="intro-feature-desc">十余家银行信用卡，大型金融机构金融产品可供选择</p>
-           </div>
-       </li>
-       <li class="intro-feature-wrap">
-           <div class="intro-feature">
-               <div class="intro-feature-icon">
-                   <i class="fa fa-cloud-upload"></i>
-               </div>
-               <h3 class="intro-feature-title">门槛超低</h3>
-               <p class="intro-feature-desc">无需投入，0元代理，创业从未如此简单</p>
-           </div>
-       </li>
-       <li class="intro-feature-wrap">
-           <div class="intro-feature">
-               <div class="intro-feature-icon">
-                   <i class="fa fa-bolt"></i>
-               </div>
-               <h3 class="intro-feature-title">结算超快</h3>
-               <p class="intro-feature-desc">查询秒结，不查自动结算，省人一步！</p>
-           </div>
-       </li>
-   </ul>
-      <div id="intro-get-started-wrap">
-        <a href="/zh-cn/page/download.html" id="intro-get-started-link">了解更多</a>
-      </div>
+      <article class="article post" itemscope="" itemtype="http://schema.org/Article">
+  <!-- 环球推手 -->
+  <header class="article-header">
+    
+      <h1>
+        <a href="/zh-cn/page/process.html" class="article-title" itemprop="name">NodeUI接入流程</a>
+      </h1>
+    
+    <a href="/zh-cn/page/process.html" class="article-date"><time datetime="2018-12-27T13:03:24.556Z">2018-12-27</time></a>
+  </header>
+  <div class="article-content" itemprop="articleBody">
+    <p>如果当前的产品开发陷入了如下的困惑：</p>
+<ul>
+<li>前端开发环境强依赖后端</li>
+<li>基于<code>React/Vue</code>移动端性能优化遇到首屏瓶颈</li>
+<li>想用<code>bigpipe</code>加速渲染</li>
+<li>后端统一输出的接口不满意，想拆分 or 想合并请求</li>
+<li>我是前端，我就是想用<code>Node.js</code></li>
+</ul>
+<p>那么，恭喜你，NodeUI是非常适合你的。我们的接入流程是：</p>
+<h4 id="1-流量预估"><a href="#1-流量预估" class="headerlink" title="1. 流量预估"></a>1. 流量预估</h4><p>如果你想直接把自己的业务接入线上的NodeUI服务，那么需要实现评估业务的流量。主要包括 <code>PV</code> 及 <code>QPS</code>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>预估值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QPS峰值</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PV总量</td>
+<td>10W</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-申请路由及模块"><a href="#2-申请路由及模块" class="headerlink" title="2. 申请路由及模块"></a>2. 申请路由及模块</h4><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模块名称</td>
+<td>cfe_h5</td>
+</tr>
+<tr>
+<td>iCode地址</td>
+<td></td>
+</tr>
+<tr>
+<td>路由名称</td>
+<td>fly/vip</td>
+</tr>
+<tr>
+<td>BNS服务</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意：项目模块名称及fekey构建时候的namespance，与路由名称可以不一致</strong></p>
+<h4 id="3-发送邮件"><a href="#3-发送邮件" class="headerlink" title="3. 发送邮件"></a>3. 发送邮件</h4>
+  </div>
+  
+</article>
+
     </div>
   </div>
 </div>
